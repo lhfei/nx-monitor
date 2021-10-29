@@ -63,7 +63,7 @@ public class KafkaResource extends BasicResources {
 	public RestResponseModel getTopics(@RequestParam(required = false) boolean showInternalTopics)
 			throws InterruptedException, ExecutionException {
     	Properties properties = new Properties();
-	    properties.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaProperties.getConsumer().getBootstrapServers());
+	    properties.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaProperties.getBootstrapServers());
 
 	    AdminClient adminClient = AdminClient.create(properties);
 
