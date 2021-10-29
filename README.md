@@ -1,2 +1,2 @@
 # nx-monitor
-Springboot integrated kafka message by with CDC
+Springboot integrated kafka message  with Kafka CDC
